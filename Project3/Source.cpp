@@ -65,7 +65,5 @@ int main()
 	cout << "Practice: " << (20 - 2) / (6 + 3)	<< endl;
 	cout << "Practice: " << 50 % 20				<< endl;
 	cout << "Practice: " << (10 + 3) % 4		<< endl;
-	cout << "Practice: floating point"			<< endl;
-	cout << "Practice: " << 3.0 + 4.0 * 6.0		<< endl;
 	return 0;
 }
