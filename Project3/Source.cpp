@@ -147,7 +147,7 @@ int main()
 	char codeA, codeB, codeC, codeD, codeE;
 
 	int firstNum, secondNum;
-	double speed, acceleration, distance;
+	double speed, acceleration;
 	double thrust;
 
 
@@ -157,14 +157,60 @@ int main()
 	cout << "Radar Speed Trap\n";
 	cout << "\n";
 	cout << "\n";
+	// Declaration statements
 	double fr, fe, vehicleSpeed;
-
-	fr = 2.0000004e10;
+	// Assignment statements
+	fr = 2.00000035e10;
 	fe = 2e10;
-
 	vehicleSpeed = 6.685e8*(fr-fe)/(fr+fe);
-
+	// Output statements
 	cout << "The vehicle speed is " << vehicleSpeed << " MPH." << endl;
+	cout << "\n";
+	cout << "\n";
+	cout << "Hydraulics\n";
+	cout << "\n";
+	cout << "\n";
+	// Declaration statements
+	double
+		horForce,
+		massFlowRate,
+		fluidVel;
+	// Assignment statements
+	massFlowRate = 1.5;		// kg/s
+	fluidVel = 3;			// m/s
+	horForce = massFlowRate * fluidVel;
+	// Output statements
+	cout << "\n";
+	cout << "\n";
+	cout << "The horizontal force, in Newtons, is " << horForce << endl;
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	/*
+	* The following program determines the stress on a steel I-beam.
+	* Design, write, compile, and run.
+	*/
+	// Declaration statements
+	double
+		stress,
+		load,
+		momentOfInertia,
+		distance,
+		heightNeutralLine;
+	// Assignment statements (inputs)
+	load = 700;					// lbs
+	distance = 8;				// ft
+	heightNeutralLine = 3;		// in
+	momentOfInertia = 21.4;		// in^4
+	// Assignment statements (calculations)
+	stress = (load * distance * heightNeutralLine) / momentOfInertia;
+	// Output statements
+	cout << "The stress is " << stress << endl;
+	
 
 	return 0;
 }
