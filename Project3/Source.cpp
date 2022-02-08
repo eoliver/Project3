@@ -133,5 +133,38 @@ int main()
 	total = grade1 + grade2;
 	average = total / 2.0;		// divide the total by 2.0
 	cout << "The average grade is " << average << endl;
+
+	int num;
+
+	num = 22;
+
+	cout << "The value stored in num is " << num << endl;
+	cout << "The address of num: " << &num << endl;
+
+	int num1, num2, num3;
+	double amps1, amps2, amps3, amps4;
+	double volts1, volts2, volts3;
+	char codeA, codeB, codeC, codeD, codeE;
+
+	int firstNum, secondNum;
+	double speed, acceleration, distance;
+	double thrust;
+
+
+	// A case study: radar speed trap
+	cout << "\n";
+	cout << "\n";
+	cout << "Radar Speed Trap\n";
+	cout << "\n";
+	cout << "\n";
+	double fr, fe, vehicleSpeed;
+
+	fr = 2.0000004e10;
+	fe = 2e10;
+
+	vehicleSpeed = 6.685e8*(fr-fe)/(fr+fe);
+
+	cout << "The vehicle speed is " << vehicleSpeed << " MPH." << endl;
+
 	return 0;
 }
