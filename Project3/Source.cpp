@@ -211,6 +211,11 @@ int main()
 	// Output statements
 	cout << "The stress is " << stress << endl;
 	
+	double base = 0.0, height = 0.0;
+
+	double area;
+
+	area = 1 / 2 * base * height;
 
 	return 0;
 }
