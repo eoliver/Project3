@@ -211,11 +211,56 @@ int main()
 	// Output statements
 	cout << "The stress is " << stress << endl;
 	
-	double base = 0.0, height = 0.0;
+	double base = 11.0, height = 39.0;
 
 	double area;
 
-	area = 1 / 2 * base * height;
+	area = 1.0 / 2.0 * base * height;
+
+
+	// This program calculates the volume of a cylinder
+	// given its radius and height.
+	double
+		heightCylinder = 16,											// assignment operator
+		radiusCylinder = 2.5,											// assignment operator
+		PI = 3.1416,													// assignment operator
+		volume;
+
+	volume = PI * radiusCylinder * radiusCylinder * heightCylinder;		// assignment expression
+
+
+
+	cout << "The volume of the cylinder is " << volume << endl;
+	cout << "The value of the expression is " << (area = 1.0 / 2.0 * base * height) << endl;
+	cout << "The value of the expression is " << area << endl;
+
+	int sum;
+	sum = 25;
+	cout << "The number stored in sum is " << sum << endl;
+	sum = sum + 10;														// accumulation statement (variable = variable + newValue;)
+	cout << "The number now stored in sum is " << sum << endl;
+
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+
+	int count;
+	count = 0;
+	cout << "The initial value of caunt is " << count << endl;
+	count++;
+	cout << "	count is now " << count << endl;
+	count++;
+	cout << "	count is now " << count << endl;
+	count++;
+	cout << "	count is now " << count << endl;
+	count++;
+	cout << "	count is now " << count << endl;
+
+
 
 	return 0;
 }
